@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+    <script src="dist/sweetalert.min.js"></script>
+    <link rel="shortcut icon" href="./img/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="img_logo_alura" >
+            <img src="./img/Logo.png" alt="Logo de Alura">
+        </div>
+        <div class="titulo">
+            <h1>Encriptador de textos</h1>
+        </div>
+    </header>
+    <main>
+        <section class="contenido">
+            <div class="contenido_encriptar">
+                <textarea class="texto_encriptar" placeholder="Escriba aquí­ el texto que desee encriptar o desencriptar"></textarea>
+                <div class="aviso">
+                    <img src="./img/Alerta.png" alt="Simbolo de alerta">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="contenido_botones_encriptar">
+                    <button class="boton_encriptar" onclick="btnEncriptar()">
+                        <p>Encriptar</p>
+                    </button>
+                    <button class="boton_desencriptar" onclick="btnDesencriptar()">
+                        <p>Desencriptar</p>
+                    </button>
+                </div>
+            </div>
+            <div class="contenido_encriptado">
+                <textarea class="texto_encriptado" placeholder="El mensaje se mostrará aquí­" readonly="readonly"></textarea>
+                <div class="contenido_botones_desencriptar">
+                    <button class="boton_copiar" onclick="copiar()">
+                        <p>Copiar</p>
+                    </button>                    
+                </div>
+            </div>            
+        </section>
+
+    </main>
+    <footer>
+        <p class="titulo_final">&copy; Roosveth Yate - ONE Latam - Todos los derechos reservados</p>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

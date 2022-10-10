@@ -1,0 +1,317 @@
+*{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.img_logo_alura{
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.titulo{
+    display: inline-block;
+    color: #0A3871;
+    position: absolute;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+body { 
+    background-color: #E5E5E5;
+}
+
+.contenido{
+    width: 90%;
+    margin: auto;
+}
+
+.contenido_encriptar{
+    display: inline-block;
+    width: 65%;
+    margin: auto;
+    padding: 0 15px 0 15px;
+}
+
+.contenido_encriptado{
+    display: inline-block;
+    width: 31.5%;
+    margin: auto;
+    position: absolute;
+    padding: 0 15px 0 15px;
+}
+
+.texto_encriptar{
+    background: none;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 410px;
+    min-height: 410px;
+    color: #0A3871;
+    border-radius: 20px;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+}
+
+.texto_encriptar:focus{
+	border: 1px solid #0A3871;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+    transition-duration: 0.5s;
+}
+
+.texto_encriptar::-webkit-input-placeholder {
+    color: #a5a5a5;
+}
+
+.texto_encriptado{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 450px;
+    min-height: 450px;
+    color: #0A3871;
+    border-radius: 20px;
+    background-image: url(./img/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    block-size: 300px;
+    padding: 15px;
+    border: none;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.texto_encriptado:focus {
+	border: 1px solid #0A3871;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+    transition-duration: 0.5s;
+}
+
+.texto_encriptado::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 20px;
+    color: #bebdbd;
+}
+
+.aviso {
+    margin: 10px 0px 10px 0px;
+}
+
+.aviso img{
+    display: inline-block;
+}
+
+.aviso p{
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+.contenido_botones_encriptar{
+    text-align: center;
+}
+
+.contenido_botones_desencriptar{
+    text-align: center;
+}
+
+.boton_encriptar{
+    background: #0A3871;
+    color: #FFFFFF;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    font-size: 20px;
+    border-width: 0px;
+}
+
+.boton_encriptar:hover {
+	background: #D8DFE8;
+    color: #002a5e;
+    border-color: #0A3871;
+    border-width: 1px;
+    transition-duration: 0.5s;
+}
+
+.boton_desencriptar{
+    background: #D8DFE8;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    border-color: #0A3871;
+    border-width: 1px;
+    color: #0A3871;
+    font-size: 20px;
+}
+
+.boton_desencriptar:hover {
+	background: #002a5e;
+    color: #D8DFE8;
+    transition-duration: 0.5s;
+}
+
+.boton_copiar{
+    background: #D8DFE8;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border-color: #0A3871;
+    color: #0A3871;
+    border-width: 1px;
+    font-size: 20px;
+}
+
+.boton_copiar:hover {
+	background: #002a5e;
+    color: #D8DFE8;
+    transition-duration: 0.5s;
+}
+
+footer{
+    background: #E5E5E5;
+    width:100%; 
+    height: 30px;
+    position: fixed; 
+    bottom: 0px; 
+    left: 0px;
+    text-align: center;
+    padding-top: 9px;
+}
+
+.titulo_final{
+    font-size: 12px;
+    color: #495057;
+}
+
+@media screen and (max-width:950px){
+
+    .titulo{
+        padding-top: 14px;
+        font-size: 12px;
+    }
+
+    .contenido_encriptar{
+        display: block;
+        width: 100%;
+    }
+    
+    .contenido_encriptado{
+        display: block;
+        width: 90%;
+        padding-bottom: 35px;
+    }
+
+    .texto_encriptar{
+        font-size: 18px;
+    }
+    
+    .texto_encriptado{
+        max-height: 300px;
+        min-height: 300px;
+        background-image: none;
+        font-size: 18px;
+    }   
+
+    .texto_encriptado::-webkit-input-placeholder {
+        font-size: 18px;
+    }
+    
+    .boton_encriptar{
+        width: 100%;
+        margin: 5px 0px 5px 0px;
+        font-size: 20px;
+    }
+
+    .boton_copiar{
+        font-size: 20px;
+    }    
+    
+    .boton_desencriptar{
+        width: 100%;
+        margin: 0px 0px 5px 0px;
+        font-size: 20px;
+    }
+     
+    .aviso p{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:500px){
+
+    .img_logo_alura img{
+        width: 55px;
+    }
+
+    .titulo{
+        padding-top: 6px;
+        font-size: 9px;
+    }
+
+    .contenido_encriptar{
+        display: block;
+        width: 100%;
+    }
+    
+    .contenido_encriptado{
+        display: block;
+        width: 90%;
+        padding-bottom: 35px;
+    }
+
+    .texto_encriptar{
+        max-height: 420px;
+        min-height: 420px;
+        font-size: 15px;
+    }
+    
+    .texto_encriptado{
+        max-height: 200px;
+        min-height: 200px;
+        background-image: none;
+        font-size: 15px;
+    }   
+
+    .texto_encriptado::-webkit-input-placeholder {
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .boton_encriptar{
+        width: 100%;
+        margin: 5px 0px 5px 0px;
+        font-size: 18px;
+    }
+
+    .boton_copiar{
+        font-size: 18px;
+    }    
+    
+    .boton_desencriptar{
+        width: 100%;
+        margin: 0px 0px 5px 0px;
+        font-size: 18px;
+    }
+     
+    .aviso p{
+        font-size: 12px;
+    }
+
+    .titulo_final{
+        font-size: 9px;
+    }
+
+}
